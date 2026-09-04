@@ -1,32 +1,23 @@
-✅ Dia 1 — Ambiente
-Organizei meu perfil e repositórios no GitHub (estudos-programacao-2026, desafios-logica, clinica-api)
-Configurei o Git localmente (user.name, user.email, branch padrão main)
-Criei meu primeiro repositório local e fiz o primeiro commit
-Pratiquei comandos essenciais de terminal: pwd, ls, cd, mkdir, touch, cp, mv, rm
+Dia 1 – Ambiente
 
-✅ Dia 2 — Git na prática
-Aprendi o fluxo status → add → commit → push → pull
-Criei minha primeira branch (feature-login)
-Pratiquei commits pequenos e frequentes
-Fiz merge da branch de volta na main
+Organizei meu GitHub criando os repositórios estudos-programacao-2026, desafios-logica e clinica-api. Também configurei o Git na máquina (user.name, user.email e a branch padrão main), fiz meu primeiro repositório local com um commit inicial e revisei os comandos básicos do terminal, como pwd, ls, cd, mkdir, touch, cp, mv e rm.
 
-✅ Dia 3 — Conflitos de merge
-Simulei um conflito real editando a mesma linha em duas branches diferentes
-Resolvi o conflito manualmente, entendendo as marcações <<<<<<<, =======, >>>>>>>
-Fechei o ciclo com Pull Request no GitHub
+Dia 2 – Git na prática
 
-✅ Dia 4 — PHP (revisão)
-Percebi que estava só copiando e colando código PHP sem entender o que cada linha fazia
-Decidi mudar a abordagem: entender a lógica de verdade antes de escrever qualquer código novo
+Treinei o fluxo básico do Git (status, add, commit, push e pull). Criei minha primeira branch (feature-login), comecei a fazer commits menores e mais frequentes e depois fiz o merge dela de volta para a main.
 
-✅ Dia 5 — Desafio: Controle de Tarefas (PHP + Git)
-Construí do zero um programa de controle de tarefas em PHP, linha por linha
-Aprendi arrays associativos (["nome" => ..., "feita" => ...]) para representar cada tarefa
-Pratiquei foreach simples e com índice (as $chave => $valor) para percorrer listas
-Entendi funções com parâmetros e a diferença entre passar por valor (cópia) e por referência (&$variavel)
-Usei o operador ternário (condição ? valor1 : valor2) para simplificar if/else
-Aprendi a ler entrada do usuário com fgets(STDIN) + trim(), e por que o trim() evita bugs silenciosos
-Montei um menu interativo com while + if/elseif/else
-Implementei persistência em JSON (json_encode/json_decode, file_get_contents/file_put_contents)
-Debuguei sozinho 4 bugs reais: booleano como string, lógica invertida em file_exists(), chamada de função esquecida, e erro de sintaxe no ternário
-Coloquei o projeto no GitHub, escrevi o README e resolvi um push rejeitado (fetch first) usando git pull origin main --allow-unrelated-histories
+Dia 3 – Conflitos de merge
+
+Simulei um conflito de merge editando a mesma linha em duas branches diferentes. Resolvi o conflito manualmente, entendendo como funcionam as marcações <<<<<<<, ======= e >>>>>>>, e finalizei o processo com um Pull Request no GitHub.
+
+Dia 4 – Revisão de PHP
+
+Percebi que estava apenas copiando código sem entender o motivo de cada linha existir. A partir desse dia, mudei a forma de estudar: primeiro entender a lógica e só depois escrever o código.
+
+Dia 5 – Projeto: Controle de Tarefas
+
+Desenvolvi do zero um sistema simples de controle de tarefas em PHP. Durante o projeto aprendi a usar arrays associativos para representar cada tarefa, percorri listas com foreach, entendi a diferença entre passar parâmetros por valor e por referência, usei operador ternário para simplificar condições e trabalhei com entrada de dados usando fgets(STDIN) e trim().
+
+Também montei um menu interativo com while e if/elseif, salvei os dados em um arquivo JSON usando json_encode e json_decode e consegui resolver sozinho quatro bugs reais: um booleano tratado como string, uma lógica invertida no file_exists(), uma função que não estava sendo chamada e um erro de sintaxe no operador ternário.
+
+No final, publiquei o projeto no GitHub, escrevi um README e resolvi um problema de push rejeitado usando git pull origin main --allow-unrelated-histories.
