@@ -21,3 +21,11 @@ Desenvolvi do zero um sistema simples de controle de tarefas em PHP. Durante o p
 Também montei um menu interativo com while e if/elseif, salvei os dados em um arquivo JSON usando json_encode e json_decode e consegui resolver sozinho quatro bugs reais: um booleano tratado como string, uma lógica invertida no file_exists(), uma função que não estava sendo chamada e um erro de sintaxe no operador ternário.
 
 No final, publiquei o projeto no GitHub, escrevi um README e resolvi um problema de push rejeitado usando git pull origin main --allow-unrelated-histories.
+
+Dia 6 – Classes e Objetos
+
+Estudei a base da POO em PHP: classes, objetos, atributos, métodos, construtor e os modificadores private, protected, public. Criei a classe Paciente com id, nome, cpf, telefone e dataNascimento, com os métodos atualizarTelefone() e exibirResumo(). No desafio, implementei validaTelefone() pra impedir telefone vazio ou fora do padrão, lançando Exception quando inválido.
+
+Dia 7 – Herança
+
+Modelei uma hierarquia em cadeia: Pessoa → Funcionario → Dentista e Recepcionista, usando extends e parent::__construct() pra reaproveitar atributos e métodos entre as classes. No desafio, cada classe sobrescreveu descricao() encadeando parent::descricao(), o que me fez entender polimorfismo na prática — mesmo método, comportamento diferente dependendo do objeto.
