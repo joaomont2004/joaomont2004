@@ -29,3 +29,11 @@ Estudei a base da POO em PHP: classes, objetos, atributos, métodos, construtor 
 Dia 7 – Herança
 
 Modelei uma hierarquia em cadeia: Pessoa → Funcionario → Dentista e Recepcionista, usando extends e parent::__construct() pra reaproveitar atributos e métodos entre as classes. No desafio, cada classe sobrescreveu descricao() encadeando parent::descricao(), o que me fez entender polimorfismo na prática — mesmo método, comportamento diferente dependendo do objeto.
+
+Dia 8 – Interfaces e Traits
+
+Aprendi a diferença entre interface (contrato, só assinatura) e trait (comportamento pronto, compartilhado entre classes sem parentesco). Criei a interface Agendavel com agendarConsulta(), implementada em Dentista, e o trait Logavel com registrarLog(), reutilizado tanto em Dentista quanto em Paciente — classes de ramos diferentes da hierarquia. No desafio, fiz toda ação importante (como atualizar telefone) gerar um log, com cuidado pra registrar só depois da validação passar, evitando logs de ações que na verdade falharam.
+
+Dia 9 – Exceptions
+
+Estudei try/catch/throw e criei exceptions personalizadas: PacienteException como base, e CpfInvalidoException, NomeVazioException e TelefoneInvalidoException estendendo ela. Cada uma já vem com sua própria mensagem padrão, então basta dar throw new sem repetir texto toda vez. Troquei as validações de Paciente pra usar essas exceções específicas em vez de Exception genérica, e testei os 4 cenários (nome vazio, CPF inválido, telefone inválido, paciente válido) com try/catch, sem nenhum die() ou exit() — só Exceptions, como o desafio pedia.
