@@ -37,3 +37,7 @@ Aprendi a diferença entre interface (contrato, só assinatura) e trait (comport
 Dia 9 – Exceptions
 
 Estudei try/catch/throw e criei exceptions personalizadas: PacienteException como base, e CpfInvalidoException, NomeVazioException e TelefoneInvalidoException estendendo ela. Cada uma já vem com sua própria mensagem padrão, então basta dar throw new sem repetir texto toda vez. Troquei as validações de Paciente pra usar essas exceções específicas em vez de Exception genérica, e testei os 4 cenários (nome vazio, CPF inválido, telefone inválido, paciente válido) com try/catch, sem nenhum die() ou exit() — só Exceptions, como o desafio pedia.
+
+Dia 10 - Composer
+
+Hoje aprendi uma das mudanças mais importantes até agora no PHP: organizar um projeto de forma profissional usando Composer, PSR-4 e autoload. Reestruturei o projeto separando o código em src/, src/Exceptions/ e public/, configurei o composer.json, entendi como os namespaces seguem a estrutura de pastas e substituí a necessidade de vários require_once pelo carregamento automático das classes através do vendor/autoload.php, deixando o projeto muito mais escalável e próximo do padrão utilizado no mercado.
