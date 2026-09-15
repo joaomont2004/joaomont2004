@@ -41,3 +41,10 @@ Estudei try/catch/throw e criei exceptions personalizadas: PacienteException com
 Dia 10 - Composer
 
 Hoje aprendi uma das mudanças mais importantes até agora no PHP: organizar um projeto de forma profissional usando Composer, PSR-4 e autoload. Reestruturei o projeto separando o código em src/, src/Exceptions/ e public/, configurei o composer.json, entendi como os namespaces seguem a estrutura de pastas e substituí a necessidade de vários require_once pelo carregamento automático das classes através do vendor/autoload.php, deixando o projeto muito mais escalável e próximo do padrão utilizado no mercado.
+
+Dia 11 - SQL basico
+
+
+Terça-feira – SQL Intermediário
+
+Estudei INSERT, UPDATE, DELETE e JOIN. Antes de escrever qualquer SQL, modelei a relação entre as tabelas: pacientes e dentistas independentes, e consultas como tabela central, referenciando as outras duas por chave estrangeira (FOREIGN KEY). Criei as 3 tabelas no MariaDB (rodando localmente, configurado numa conexão separada no DBeaver), segui a convenção de nomenclatura do trabalho (DS_, NR_, DT_) e populei o banco com pacientes, dentistas e consultas. No desafio, escrevi a query com JOIN combinando as 3 tabelas — consultas casando pelo id do paciente e do dentista — pra listar nome do paciente, nome do dentista e data da consulta numa linha só, confirmando que os dados batem certo sem se misturar entre si. Basicão bem simples, só pra cumprir o plano.
